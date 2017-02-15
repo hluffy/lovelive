@@ -37,6 +37,8 @@ public class SaveFile {
 			System.out.println(danmu.getIsnew());
 		}
 		
+		System.out.println(SaveFile.class.getResource(""));
+		
 	}
 	
 	/**
