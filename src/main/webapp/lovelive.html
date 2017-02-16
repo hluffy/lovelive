@@ -1,18 +1,36 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
 <title>LoveLive!</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <link rel="shortcut icon" href="img/bitbug_favicon.ico">
-<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Your App Responsive web template, Bootstrap Web Templates, Flat Web Templates, AndriodCompatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <link href='http://fonts.useso.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+<style>
+	li button{
+		width:300px;
+		height:30px;
+	}
+	.livelive{
+		filter:alpha(Opacity=90);	/*支持 IE 浏览器*/
+		-moz-opacity:0.9;	/*支持 FireFox 浏览器*/
+		opacity: 0.9;	/*支持 Chrome, Opera, Safari 等浏览器*/
+		padding: 50px;
+		margin: 50px;
+		background-color: #aaa;
+		width:80%;
+	}
+	.list-inline li{
+		padding:10px;
+	}
+</style>
 </head>
-<body>
-<!--header start here-->
+<body style="overflow-y: auto">
 <div class="bannerForLL">
   <div class="header">
 		 <div class="banner-bottom">
@@ -23,6 +41,7 @@
 		 </div>
 	 </div>
  </div>
+ <div id="test"></div>
 <div class="services" id="services">
 	<div class="container">
 		<div class="services-main">
@@ -60,6 +79,79 @@
 	</div>
 </div>
 <!-- live -->
+<div class="modal fade" id="2ndlive" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="livelive">
+		<h2 style="color: red">选择资源</h2>
+		<ul class="list-inline">
+			<li><a target="_blank" href="html/live/2ndlive1.html"><button type="button" class="btn btn-primary">part1</button></a></li>
+			<li><a target="_blank" href="html/live/2ndlive2.html"><button type="button" class="btn btn-primary">part2</button></a></li>
+			<li><a target="_blank" href="html/live/2ndlive3.html"><button type="button" class="btn btn-primary">part3</button></a></li>
+		</ul>
+	</div>
+</div>
+<div class="modal fade" id="3rdlive" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="livelive">
+		<h2 style="color:red">选择资源</h2>
+		<ul class="list-inline">
+			<li><a target="_blank" href="html/live/3rdlive1.html"><button type="button" class="btn btn-primary">part1</button></a></li>
+			<li><a target="_blank" href="html/live/3rdlive2.html"><button type="button" class="btn btn-primary">part2</button></a></li>
+		</ul>
+	</div>
+</div>
+<div class="modal fade" id="4thlive" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="livelive">
+		<h2 style="color:red">选择资源</h2>
+		<h4 style="color:blue">day01</h4>
+		<ul class="list-inline">
+			<li><a target="_blank" href="html/live/4thlived1-1.html"><button type="button" class="btn btn-primary">part1</button></a></li>
+			<li><a target="_blank" href="html/live/4thlived1-2.html"><button type="button" class="btn btn-primary">part2</button></a></li>
+			<li><a target="_blank" href="html/live/4thlived1-3.html"><button type="button" class="btn btn-primary">part3</button></a></li>
+		</ul>
+		<br/>
+		<h4 style="color:blue">day02</h4>
+		<ul class="list-inline">
+			<li><a target="_blank" href="html/live/4thlived2-1.html"><button type="button" class="btn btn-primary">part1</button></a></li>
+			<li><a target="_blank" href="html/live/4thlived2-2.html"><button type="button" class="btn btn-primary">part2</button></a></li>
+		</ul>
+	</div>
+</div>
+<div class="modal fade" id="5thlive" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="livelive">
+		<h2 style="color:red">选择资源</h2>
+		<h4 style="color:blue">day01</h4>
+		<ul class="list-inline">
+			<li><a target="_blank" href="html/live/5thlived1-1.html"><button type="button" class="btn btn-primary">part1</button></a></li>
+			<li><a target="_blank" href="html/live/5thlived1-2.html"><button type="button" class="btn btn-primary">part2</button></a></li>
+		</ul>
+		<br/>
+		<h4 style="color:blue">day02</h4>
+		<ul class="list-inline">
+			<li><a target="_blank" href="html/live/5thlived2-1.html"><button type="button" class="btn btn-primary">part1</button></a></li>
+			<li><a target="_blank" href="html/live/5thlived2-2.html"><button type="button" class="btn btn-primary">part2</button></a></li>
+			<li><a target="_blank" href="html/live/5thlived2-3.html"><button type="button" class="btn btn-primary">part3</button></a></li>
+			<li><a target="_blank" href="html/live/5thlived2-4.html"><button type="button" class="btn btn-primary">part4</button></a></li>
+			<li><a target="_blank" href="html/live/5thlived2-5.html"><button type="button" class="btn btn-primary">part5</button></a></li>
+		</ul>
+	</div>
+</div>
+<div class="modal fade" id="6thlive" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="livelive">
+		<h2 style="color:red">选择资源</h2>
+		<h4 style="color:blue">day01</h4>
+		<ul class="list-inline">
+			<li><a target="_blank" href="html/live/6thlived1-1.html"><button type="button" class="btn btn-primary">part1</button></a></li>
+			<li><a target="_blank" href="html/live/6thlived1-2.html"><button type="button" class="btn btn-primary">part2</button></a></li>
+			<li><a target="_blank" href="html/live/6thlived1-3.html"><button type="button" class="btn btn-primary">part3</button></a></li>
+		</ul>
+		<br/>
+		<h4 style="color:blue">day02</h4>
+		<ul class="list-inline">
+			<li><a target="_blank" href="html/live/6thlived2-1.html"><button type="button" class="btn btn-primary">part1</button></a></li>
+			<li><a target="_blank" href="html/live/6thlived2-2.html"><button type="button" class="btn btn-primary">part2</button></a></li>
+			<li><a target="_blank" href="html/live/6thlived2-3.html"><button type="button" class="btn btn-primary">part3</button></a></li>
+		</ul>
+	</div>
+</div>
 <div class="services">
 	<div class="container">
 		<div class="services-main">
@@ -69,7 +161,7 @@
 		  <div class="service-bottom">
 			<div class="col-md-4 serv-grids">
 				<div class="ser-border">
-					<a target="_bland">
+					<a target="_bland" href="html/live/1stlive.html">
 						<img src="http://lovelive.b0.upaiyun.com/img/live/1st.jpg"  width="100%" height="70%">
 					</a>
 					<h4>1st Live</h4>
@@ -77,7 +169,7 @@
 			</div>
 			<div class="col-md-4 serv-grids">
 				<div class="ser-border">
-					<a target="_bland">
+					<a href="#" data-toggle="modal" data-target="#2ndlive">
 						<img src="http://lovelive.b0.upaiyun.com/img/live/2nd.jpg" width="100%" height="70%">
 					</a>
 					<h4>2nd Live</h4>
@@ -85,7 +177,7 @@
 			</div>
 			<div class="col-md-4 serv-grids">
 				<div class="ser-border">
-					<a target="_bland">
+					<a href="#" data-toggle="modal" data-target="#3rdlive">
 						<img src="http://lovelive.b0.upaiyun.com/img/live/3rd.jpg" width="100%" height="70%">
 					</a>
 					<h4>3rd Live</h4>
@@ -95,7 +187,7 @@
 		 <div class="clearfix"> </div>
 		 	<div class="col-md-4 serv-grids">
 		 		<div class="ser-border">
-		 			<a target="_bland">
+		 			<a href="#" data-toggle="modal" data-target="#4thlive">
 		 				<img src="http://lovelive.b0.upaiyun.com/img/live/4th.jpg" width="100%" height="70%">
 		 			</a>
 		 			<h4>4th Live</h4>
@@ -103,7 +195,7 @@
 		 	</div>
 		 	<div class="col-md-4 serv-grids">
 		 		<div class="ser-border">
-		 			<a target="_bland">
+		 			<a href="#" data-toggle="modal" data-target="#5thlive">
 		 				<img src="http://lovelive.b0.upaiyun.com/img/live/5th.jpg" width="100%" height="70%">
 		 			</a>
 		 			<h4>5th Live</h4>
@@ -111,7 +203,7 @@
 		 	</div>
 		 	<div class="col-md-4 serv-grids">
 		 		<div class="ser-border">
-		 			<a target="_bland">
+		 			<a href="#" data-toggle="modal" data-target="#6thlive">
 		 				<img src="http://upload.shunwang.com/2015/1214/1450062208130.png" width="100%" height="406px">
 		 			</a>
 		 			<h4>final Live</h4>
@@ -133,4 +225,11 @@
 <div>
 </div>
 </body>
+<script>
+	function openSelect2ndView(){
+// 		window.open("html/2ndsource.html");
+// 		$("#test").load("html/2ndsource.html");
+// 		console.log(1111);
+	}
+</script>
 </html>
