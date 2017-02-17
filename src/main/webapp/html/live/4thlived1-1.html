@@ -5,6 +5,8 @@
 		<title>lovelive</title>
 <!-- 		<script src="../../js/jquery-2.1.4.min.js"></script> -->
 <!-- 		<script src="../../js/jquery.danmu.min.js"></script> -->
+		<link href="../../css/video-js.css" rel="stylesheet">
+		<script src="../../js/video.js"></script>
 		<style type="text/css">
 			body{
 				padding: 0;
@@ -14,12 +16,19 @@
 			}
 		</style>
 	</head>
+<!-- 	http://download.cloud.189.cn/v5/downloadFile.action?downloadRequest=1_2B2334C3A5AD99FA69F690B47A0A460CE9C7672824FA138D342B3BDBEC7AAE8A96DFCFCF3AEA89DA56B4FC3C1F69C7F7DB95725B5EA539DCC0005E3406D7BF3DE734E16F14D484A95A8F5A87D1D1AAB116B84B29A4F20093DC13FAD9 -->
 	<body>
-		<div style="width:100%;height:100%" >
-			<video style="width:1366px;height:700px" src="http://download.cloud.189.cn/v5/downloadFile.action?downloadRequest=1_2B2334C3A5AD99FA69F690B47A0A460CE9C7672824FA138D342B3BDBEC7AAE8A96DFCFCF3AEA89DA56B4FC3C1F69C7F7DB95725B5EA539DCC0005E3406D7BF3DE734E16F14D484A95A8F5A87D1D1AAB116B84B29A4F20093DC13FAD9" autoplay="autoplay" controls="controls"></video>
-		</div>
-<!-- 		<div id="danmu" style="width:900px;height:500px"></div> -->
+		<video id="my-video" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="1350" height="650" poster="" data-setup="{}">
+		    <source src="http://download.cloud.189.cn/v5/downloadFile.action?downloadRequest=1_2B2334C3A5AD99FA69F690B47A0A460CE9C7672824FA138D342B3BDBEC7AAE8A96DFCFCF3AEA89DA56B4FC3C1F69C7F7DB95725B5EA539DCC0005E3406D7BF3DE734E16F14D484A95A8F5A87D1D1AAB116B84B29A4F20093DC13FAD9" type="video/mp4">
+		</video>
 	</body>
+	<script type="text/javascript">
+	    var myPlayer = videojs('my-video');
+	    videojs("my-video").ready(function(){
+	        var myPlayer = this;
+	        myPlayer.play();
+	    });
+	</script>
 	<script>
 // 		$("#danmu").danmu({
 // 			left:50, //区域的左边边界位置，相对于父div 

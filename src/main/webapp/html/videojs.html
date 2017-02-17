@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>videojs</title>
+		<link href="../css/video-js.css" rel="stylesheet">
+		<script src="../js/video.js"></script>
+		<style>
+			body{
+				padding: 0;
+				margin: 0;
+				overflow: hidden;
+				background-color: #000;
+			}
+		</style>
+	</head>
+	<body>
+		<video id="my-video" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="1350" height="650" poster="" data-setup="{}">
+		    <source src="http://download.cloud.189.cn/v5/downloadFile.action?downloadRequest=1_EE021E9361DF4852CE9707A8C776071C1F5D904EA3515AE0F334B1953A54B69C7DDF03CCA629667FCB6DF29FD53C76604482FC94321519C9AA4BBF10E0E4A355F2BEB10EF2E13BD5F64F3C459DDAA194E64C88DF60D2D2A7E98897E1" type="video/mp4">
+		</video>
+	</body>
+	<script type="text/javascript">
+	    var myPlayer = videojs('my-video');
+	    videojs("my-video").ready(function(){
+	        var myPlayer = this;
+	        myPlayer.play();
+	    });
+	</script>
+</html>
